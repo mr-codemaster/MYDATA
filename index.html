@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MYDATA</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f3f6f9;
+                color: #263238;
+            }
+
+            .heading {
+                background-color: #263b50;
+                color: #ffffff;
+                padding: 10px 20px;
+                text-align: center;
+                border-radius: 15px;
+            }
+
+            .heading h1 {
+                margin: 0;
+            }
+
+            .button {
+                background-color: #16836b;
+                color: #ffffff;
+            }
+
+            .button:hover {
+                background-color: #116b57;
+                color: #ffffff;
+                transition: 0.55s;
+            }
+
+            .companies ol {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                counter-reset: company;
+            }
+
+            .companies li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .companies li::before {
+                counter-increment: company;
+                content: counter(company) ".";
+                flex: 0 0 1.5em;
+            }
+
+            .companies li .button {
+                margin-left: auto;
+            }
+
+            h2 {
+                padding: 0;
+                margin: 0;
+            }
+
+            .p {
+                margin-top: 0;
+                padding-top: 0;
+                margin-left: 9px;
+                padding-left: 9px;
+            }
+
+            ol {
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 0;
+            }
+
+            .c1,
+            .c2,
+            .c3 {
+                width: 12px;
+                height: 12px;
+            }
+            
+                
+            .search {
+            display: block;
+            width: 300px;
+             margin: 20px auto;
+             padding-top: 0px;
+             margin-top:0px;
+
+}             
+            .chead{
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+            }
+            .button{
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            <h1>MYDATA</h1>
+        </div>
+        <DIV class="layout">
+            <div class="content">
+                <h2> <u>Welcome to MYDATA</u></h2>
+                <p class="p">Worried that a website or game may have exposed your personal information? MYDATA helps you identify companies that may hold your data and request its deletion. Choose a company below to get started.</p>
+            </div>
+            <div class="companies">
+                <h3 class="chead"><strong>Companies That May Have Your Data</strong></h3>
+                <input class="search" type="search" placeholder="Search for a company..." >
+                <ol>
+                    <li><img class="c1" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google logo" width="80" height="30"> Google <button class="button">REQUEST DATA DELETION</button></li>
+                    <li><img class="c2" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon logo" width="80" height="30"> Amazon <button class="button">REQUEST DATA DELETION</button></li>
+                    <li><img class="c3" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook logo" width="30" height="30"> Facebook <button class="button">REQUEST DATA DELETION
+                        
+                    </button></li>
+                </ol>
+            </div>
+
+        </DIV>
+
+    </body>
+</html>
